@@ -1,0 +1,32 @@
+{
+	"Main": {
+		"site_title": {
+			"type": "Text",
+			"config": {
+				"label": "Site Title"
+			}
+		},
+		"navigation": {
+			"type": "Group",
+			"config": {
+				"fields": {
+					"link_label": {
+						"type": "Text",
+						"config": {
+							"label": "Link Label"
+						}
+					},
+					"link": {
+						"type": "Link",
+						"config": {
+							"label": "Link",
+							"allowTargetBlank": true,
+							"select": null
+						}
+					}
+				},
+				"label": "Navigation"
+			}
+		}
+	}
+}

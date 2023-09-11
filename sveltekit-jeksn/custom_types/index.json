@@ -1,0 +1,14 @@
+[
+	{
+		"id": "page",
+		"name": "page",
+		"repeatable": true,
+		"value": "page.json"
+	},
+	{
+		"id": "settings",
+		"name": "settings",
+		"repeatable": false,
+		"value": "settings.json"
+	}
+]

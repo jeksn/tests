@@ -1,0 +1,125 @@
+{
+	"Main": {
+		"uid": {
+			"type": "UID",
+			"config": {
+				"label": "UID",
+				"placeholder": "hello-world"
+			}
+		},
+		"title": {
+			"type": "StructuredText",
+			"config": {
+				"single": "heading1",
+				"label": "Title",
+				"placeholder": "Hello World"
+			}
+		},
+		"body": {
+			"type": "Slices",
+			"fieldset": "Slice zone",
+			"config": {
+				"labels": null,
+				"choices": {
+					"fun_heading": {
+						"type": "Slice",
+						"fieldset": "Fun Heading",
+						"description": "Some fun text for fun folks.",
+						"icon": "color_lens",
+						"display": "list",
+						"non-repeat": {
+							"text": {
+								"type": "Text",
+								"config": {
+									"label": "Text",
+									"placeholder": "Wowza"
+								}
+							}
+						},
+						"repeat": {}
+					},
+					"text_block": {
+						"type": "Slice",
+						"fieldset": "Text Block",
+						"description": "Some important text.",
+						"icon": "text_fields",
+						"display": "list",
+						"non-repeat": {
+							"text": {
+								"type": "StructuredText",
+								"config": {
+									"multi": "paragraph,preformatted,heading2,strong,em,hyperlink",
+									"allowTargetBlank": true,
+									"label": "text",
+									"placeholder": "Lorem ipsum..."
+								}
+							}
+						},
+						"repeat": {}
+					},
+					"text_box": {
+						"type": "Slice",
+						"fieldset": "Text Box",
+						"description": "A box with some text and an icon.",
+						"icon": "textsms",
+						"display": "list",
+						"non-repeat": {
+							"emoji": {
+								"type": "Text",
+								"config": {
+									"label": "Emoji",
+									"placeholder": "Choose an emoji"
+								}
+							},
+							"text": {
+								"type": "StructuredText",
+								"config": {
+									"multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+									"allowTargetBlank": true,
+									"label": "Text",
+									"placeholder": "Lorem ipsum dolor sit amet..."
+								}
+							}
+						},
+						"repeat": {}
+					},
+					"image_bullets": {
+						"type": "Slice",
+						"fieldset": "Image Bullets",
+						"description": "An image with some bullet points.",
+						"icon": "image",
+						"display": "list",
+						"non-repeat": {
+							"image": {
+								"type": "Image",
+								"config": {
+									"constraint": {},
+									"thumbnails": [],
+									"label": "Image"
+								}
+							}
+						},
+						"repeat": {
+							"emoji": {
+								"type": "Text",
+								"config": {
+									"label": "Emoji",
+									"placeholder": "Enter an emoji"
+								}
+							},
+							"bullet": {
+								"type": "StructuredText",
+								"config": {
+									"single": "strong,em,hyperlink",
+									"allowTargetBlank": true,
+									"label": "Bullet",
+									"placeholder": "Buy milk"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
